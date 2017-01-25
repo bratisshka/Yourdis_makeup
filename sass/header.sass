@@ -1,0 +1,171 @@
+@import "bourbon"
+@import "vars.sass"
+
+body
+    font-size: 16px
+    min-width: 320px
+    position: relative
+    line-height: 1.5
+    font-family: "RobotoRegular", sans-serif
+    overflow-x: hidden
+    color: #111111
+.hidden
+    display: none
+a
+    outline: none !important
+strong, b
+    font-family: RobotoBold, $helvetica
+
+h1,h2,h3,h4,h5,h6, .button
+    font-family: RobotoCondensedBold, $helvetica
+    font-weight: normal
+    text-transform: uppercase
+
+.text-right
+    text-align: right
+.text-left
+    text-align: left
+.top-line
+    background-color: $main-color
+    text-align: center
+    border-bottom: lighten($main-color, 7%) 1px solid
+    a
+        color: #ffffff
+    ul, li
+        list-style-type: none
+        margin: 0
+        padding: 0
+    .sf-menu
+        display: inline-block
+        margin: auto
+        margin-bottom: -6px
+        float: none
+        font-family: RobotoCondensedRegular, $helvetica
+        font-size: em(15px)
+        ul
+            background-color: $main-color
+            >li
+                border-bottom: lighten($main-color,10%) 1px solid
+                a
+                    padding: 12px 25px
+                    text-align: left
+        li
+            background-color: transparent
+            &:hover
+                background-color: darken($main-color, 3%)
+                >a
+                    color: $accent-color
+            a
+                color: #ffffff
+                border: none
+                padding: 25px 25px
+                &:hover
+                    color: $accent-color
+                .fa
+                    font-size: 11px
+                    margin-left: 2px
+        >li
+            display: inline-block
+
+.top-panel
+    background-color: rgba(lighten($main-color, 2%),.8)
+    color: #ffffff
+    padding: 50px 0
+    position: relative
+    &-content
+        position: relative
+        z-index: 1
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        z-index: 0
+        background-image: url(../img/top-pannel-bg.jpg)
+        opacity: 0.16
+    &-box
+        h4
+            font-family: RobotoCondensedRegular, sans-serif
+            font-size: em(15px)
+            margin-top: 0
+            position: relative
+            &::after
+                position: absolute
+                content: ''
+                height: 1px
+                width: 100%
+                left: 0
+                bottom: -10px
+                opacity: .4
+                background-color: $accent-color
+        ul,li
+            margin: 0
+            padding: 0
+            list-style-type: none
+        li
+            display: inline-block
+            max-width: 48%
+            opacity: .35
+            font-size: em(13px)
+            padding: 0 10px 0 22px
+            position: relative
+            &:only-child
+                max-width: 100%
+            .fa
+                font-size: 16px
+                position: absolute
+                left: 0
+                top: 6px
+.logo
+    position: relative
+    top: 3px
+    img
+        width: 100%
+
+.top-phone
+    font-size: em(20px)
+    font-family: RobotoCondensedRegular, sans-serif
+    margin-top: -3px
+    span
+        font-size: em(12px)
+        opacity: .3
+.top-email
+    font-size: em(14px)
+    a
+        color: #ffffff
+        text-decoration: underline
+    span
+        opacity: .3
+.top-phone, .top-email
+    .fa
+        margin-right: 3px
+
+.button
+    color: #222
+    background-color: $accent-color
+    border-radius: 2px
+    font-size: em(16px)
+    padding: 6px 22px
+    position: relative
+    &-small
+        font-size: em(14px)
+        &::after
+            height: 2px
+    &::after
+        position: absolute
+        content: ''
+        background-color: darken($accent-color, 10%)
+        height: 3px
+        width: 100%
+        bottom: 0
+        left: 0
+        border-bottom-right-radius: 2px
+        border-bottom-left-radius: 2px
+    &:hover, &:focus
+        text-decoration: none
+        color: #222222
+
+.top-button
+    margin-top: 22px
