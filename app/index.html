@@ -1564,11 +1564,39 @@
 </head>
 
 <body class="ishome">
+
+<nav id="my-menu">
+    <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">О компании</a></li>
+        <li>
+            <a href="#">Услуги и стоимость</a>
+            <ul>
+                <li>
+                    <a class="" href="#">Подменю</a>
+                    <ul>
+                        <li><a href="#">Подменю</a></li>
+                        <li><a href="#">Подменю</a></li>
+                        <li><a href="#">Подменю</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Подменю</a></li>
+                <li><a href="#">Подменю</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Сертификаты</a></li>
+        <li><a href="#">Статьи</a></li>
+        <li><a href="#">Контакты</a></li>
+    </ul>
+</nav>
 <header class="main-head">
+    <div class="mobile-mnu hidden-lg hidden-md">
+        <a href="#" class="toggle-mnu hidden-lg"><span></span></a> <b>Меню</b>
+    </div>
     <nav class="top-line">
         <div class="container">
-            <ul class="sf-menu">
-                <li><a href="#">Главная</a></li>
+            <ul class="sf-menu hidden-sm hidden-xs">
+                <li class="active"><a href="#">Главная</a></li>
                 <li><a href="#">О компании</a></li>
                 <li>
                     <a href="#">Услуги и стоимость <i class="fa fa-caret-down"></i></a>
@@ -1595,12 +1623,12 @@
         <div class="container">
             <div class="top-panel-content">
                 <div class="row">
-                    <div class="col-md-2">
+                    <div class="col-md-2 col-xs-4">
                         <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
                     </div>
-                    <div class="col-md-4">
-                        <div class="top-panel-box">
-                            <h4>Адреса организаций</h4>
+                    <div class="col-md-4 hidden-sm hidden-xs">
+                        <div class="top-panel-box ">
+                            <h4>Адреса организаций:</h4>
                             <ul>
                                 <li><i class="fa fa-map-marker" aria-hidden="true"></i>
                                     г. Москва, ул. Соколовского, д. 3, офис № 305
@@ -1611,9 +1639,9 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="top-panel-box">
-                            <h4>Время работы</h4>
+                    <div class="col-md-3 hidden-sm hidden-xs">
+                        <div class="top-panel-box ">
+                            <h4>Время работы:</h4>
                             <ul>
                                 <li><i class="fa fa-clock-o" aria-hidden="true"></i>
                                     пн-пт c 10-00 - 18-00;
@@ -1625,12 +1653,12 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-xs-8">
                         <div class="text-right">
                             <div class="top-phone">
                                 <span><i class="fa fa-phone"></i> 8 (929)</span> 333-777-88, 333-777-88
                             </div>
-                            <div class="top-email">
+                            <div class="top-email hidden-sm hidden-xs">
                                 <span><i class="fa fa-envelope"></i> E-Mail:</span>
                                 <a href="mailto:emailsender@gmail.com">emailsender@gmail.com
                                 </a>
@@ -1644,7 +1672,108 @@
             </div>
         </div>
     </section>
+    <section class="slider-wrap">
+        <div class="container">
+            <div class="slider-nav">
+                <div class="owl-prev"><i class="fa fa-angle-left"></i></div>
+                <div class="owl-next"><i class="fa fa-angle-right"></i></div>
+            </div>
+        </div>
+        <div class="slider owl-carousel">
+            <!-- Slide start -->
+            <div class="slide item">
+                <div class="slide-bg" style="background-image: url(img/slide-1.jpg);"></div>
+                <div class="slide-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-10 col-xs-offset-1">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h1>Первая оценочная компания Москвы</h1>
+                                        <p>
+                                            Далеко-далеко за словесными горами в стране, гласных и согласных живут
+                                            рыбные
+                                            тексты. Рукопись предупреждал всемогущая там не последний.
+                                        </p>
+                                        <a href="#" class="button">Список услуг</a>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="slide-img-wrap hidden-xs hidden-sm">
+                                            <img src="img/slide-img-1.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide End -->
+            <!-- Slide start -->
+            <div class="slide item">
+                <div class="slide-bg" style="background-image: url(img/slide-1.jpg);"></div>
+                <div class="slide-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-10 col-xs-offset-1">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h1>Первая оценочная компания Москвы</h1>
+                                        <p>
+                                            Далеко-далеко за словесными горами в стране, гласных и согласных живут
+                                            рыбные
+                                            тексты. Рукопись предупреждал всемогущая там не последний.
+                                        </p>
+                                        <a href="#" class="button">Список услуг</a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="slide-img-wrap hidden-xs hidden-sm">
+                                            <img src="img/slide-img-1.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide End -->
+            <!-- Slide start -->
+            <div class="slide item">
+                <div class="slide-bg" style="background-image: url(img/slide-1.jpg);"></div>
+                <div class="slide-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-10 col-xs-offset-1">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h1>Первая оценочная компания Москвы</h1>
+                                        <p>
+                                            Далеко-далеко за словесными горами в стране, гласных и согласных живут
+                                            рыбные
+                                            тексты. Рукопись предупреждал всемогущая там не последний.
+                                        </p>
+                                        <a href="#" class="button">Список услуг</a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="slide-img-wrap hidden-xs hidden-sm">
+                                            <img src="img/slide-img-1.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide End -->
+        </div>
+    </section>
+
 </header>
+<section>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur deleniti est fugit laudantium nihil quasi quisquam similique suscipit voluptates.
+</section>
 <div class="hidden"></div>
 
 <!--[if lt IE 9]>
