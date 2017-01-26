@@ -7,7 +7,8 @@ $(function () {
         });
     }
     // jQuery('.sf-menu').superfish();
-
+    //equalHeights
+    $(".service-item h4").equalHeights();
 
     //Mobilde menu toggle
     $("#my-menu").mmenu({

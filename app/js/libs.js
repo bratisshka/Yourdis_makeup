@@ -356,3 +356,21 @@ function(e){var n="mmenu",t="setSelected";e[n].addons[t]={setup:function(){var a
  * Copyright (c) Fred Heusschen
  */
 function(e){var n="mmenu",t="toggles";e[n].addons[t]={setup:function(){var s=this;this.opts[t],this.conf[t];o=e[n].glbl,this.bind("initPanels",function(n){this.__refactorClass(e("input",n),this.conf.classNames[t].toggle,"toggle"),this.__refactorClass(e("input",n),this.conf.classNames[t].check,"check"),e("input."+i.toggle+", input."+i.check,n).each(function(){var n=e(this),t=n.closest("li"),a=n.hasClass(i.toggle)?"toggle":"check",o=n.attr("id")||s.__getUniqueId();t.children('label[for="'+o+'"]').length||(n.attr("id",o),t.prepend(n),e('<label for="'+o+'" class="'+i[a]+'"></label>').insertBefore(t.children("a, span").last()))})})},add:function(){i=e[n]._c,s=e[n]._d,a=e[n]._e,i.add("toggle check")},clickAnchor:function(e,n){}},e[n].configuration.classNames[t]={toggle:"Toggle",check:"Check"};var i,s,a,o}(jQuery);
+(function ($) {
+  $.fn.equalHeights = function () {
+    var $items = $(this);
+    function equalize() {
+      $items.height('initial');
+      var maxH = $items.eq(0).height();
+      $items.each(function () {
+        maxH = ($(this).height() > maxH) ? $(this).height() : maxH;
+      });
+      $items.height(maxH);
+    }
+    equalize();
+    $(window).bind('resize', function () {
+      equalize();
+    });
+  };
+})(jQuery);
+
