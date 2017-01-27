@@ -9,7 +9,9 @@ $(function () {
     // jQuery('.sf-menu').superfish();
     //equalHeights
     $(".service-item h4").equalHeights();
-
+    $(".news-item h4").equalHeights();
+    $(".news-item p").equalHeights();
+    $(".link-item .h4").equalHeights();
     //Mobilde menu toggle
     $("#my-menu").mmenu({
         extensions: ['widescreen', 'theme-white', 'effect-menu-slide', 'pagedim-black'],
@@ -79,5 +81,20 @@ $(function () {
         event.preventDefault();
     });
 
+    $('.popup-with-move-anim').magnificPopup({
+        type: 'inline',
+
+        fixedContentPos: false,
+        fixedBgPos: true,
+
+        overflowY: 'auto',
+
+        closeBtnInside: true,
+        preloader: false,
+
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-slide-bottom'
+    });
 
 });

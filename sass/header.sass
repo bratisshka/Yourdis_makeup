@@ -19,7 +19,7 @@ a
 strong, b
     font-family: RobotoBold, $helvetica
 
-h1, h2, h3, h4, h5, h6, .button
+h1, h2, h3, h4, h5, h6, .button, .h1, .h2, .h3, .h4, .h5, .h6
     font-family: RobotoCondensedBold, $helvetica
     font-weight: normal
     text-transform: uppercase
@@ -140,23 +140,23 @@ h1, h2, h3, h4, h5, h6, .button
         img
             max-width: 100%
 
-    .top-phone
-        font-size: em(19px)
-        font-family: RobotoCondensedRegular, sans-serif
-        margin-top: -3px
-        span
-            font-size: em(12px)
-            opacity: .3
-    .top-email
-        font-size: em(14px)
-        a
-            color: #ffffff
-            text-decoration: underline
-        span
-            opacity: .3
-    .top-phone, .top-email
-        .fa
-            margin-right: 3px
+.top-phone
+    font-size: em(19px)
+    font-family: RobotoCondensedRegular, sans-serif
+    margin-top: -3px
+    span
+        font-size: em(12px)
+        opacity: .3
+.top-email
+    font-size: em(14px)
+    a
+        color: #ffffff
+        text-decoration: underline
+    span
+        opacity: .3
+.top-phone, .top-email
+    .fa
+        margin-right: 3px
 
 .button
     color: #222
@@ -168,7 +168,7 @@ h1, h2, h3, h4, h5, h6, .button
     transition: all .25s ease
     &-small
         font-size: em(14px)
-        padding: 6px 22px
+        padding: 6px 18px
         &::after
             height: 2px
     &::after
